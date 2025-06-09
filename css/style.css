@@ -2168,3 +2168,121 @@ ol {
     padding: 30px 40px 35px 35px;
   }
 }
+
+/* About Me Section Styles */
+.about-me {
+  background: #1a1a1a !important;
+  color: #ffffff !important;
+}
+
+.about-me__image {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-me__image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-me__image img:hover {
+  transform: scale(1.05);
+}
+
+.about-me__content h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.about-me__content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #cccccc !important;
+  margin-bottom: 20px;
+}
+
+.about-me__skills {
+  margin: 30px 0;
+}
+
+.about-me__skills h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.about-me__skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-me__skills li {
+  padding: 8px 0;
+  font-size: 15px;
+  color: #cccccc !important;
+  position: relative;
+  padding-left: 20px;
+}
+
+.about-me__skills li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.about-me__cta {
+  margin-top: 30px;
+}
+
+.about-me__cta .primary-btn {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.btn-outline {
+  background: transparent !important;
+  border: 2px solid #ffffff !important;
+  color: #ffffff !important;
+}
+
+.btn-outline:hover {
+  background: #ffffff !important;
+  color: #1a1a1a !important;
+}
+
+/* Responsive styles for About Me section */
+@media (max-width: 991px) {
+  .about-me__image {
+    margin-bottom: 40px;
+  }
+  
+  .about-me__content h3 {
+    font-size: 24px;
+  }
+  
+  .about-me__cta .primary-btn {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-me__content h3 {
+    font-size: 22px;
+  }
+  
+  .about-me__image img {
+    max-width: 80%;
+  }
+}
